@@ -1,0 +1,126 @@
+body {
+  background-color: rgb(75, 77, 77);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 100px;
+  color: black;
+  margin-top: 5%;
+}
+
+h2 {
+  text-align: center;
+  font-size: 40px;
+  color: black;
+  margin-top: -50px;
+  margin-bottom: 80px;
+}
+
+input {
+  width: 40px;
+  height: 30px;
+  border: 3px solid black;
+  border-radius: 10px;
+  transform: translateY(-6px);
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+button {
+  font-size: 30px;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: rgb(5, 168, 168);
+}
+
+button:hover {
+  background:#b20a23;
+  box-shadow: 0 0 5px #b20a23, 0 0 25px #b20a23,
+      0 0 50px #b20a23, 0 0 200px #b20a23;
+}
+
+.password_output {
+  font-size: 35px;
+  text-align: center;
+  border: 3px solid black; 
+  border-radius: 20px; 
+  background-color: rgb(47, 143, 95);
+  display: inline-block;
+  width: auto; 
+  padding: 10px;
+  margin-top: 50px;
+  box-shadow: 0 0 5px #e4a620, 0 0 15px #e4a620, 
+              0 0 25px #e4a620, 0 0 100px #e4a620;
+  animation: spin;
+  animation-duration: 0.3s;
+}
+
+.password_output p {
+  margin-top: 3px;
+  margin-bottom: 3px; 
+}
+
+.password_output button {
+  margin-top: 5px;
+}
+
+#manual_input{
+  font-size: 40px;
+}
+
+@keyframes spin {
+  0% {
+    transform: scale(0) rotate(0deg);
+    opacity: 0;
+  }
+  20% {
+    transform: scale(0.2) rotate(72deg);
+    opacity: 0.2;
+  }
+  40% {
+    transform: scale(0.4) rotate(144deg);
+    opacity: 0.4;
+  }
+  60% {
+    transform: scale(0.6) rotate(216deg);
+    opacity: 0.6;
+  }
+  80% {
+    transform: scale(0.8) rotate(288deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+    opacity: 1;
+  }
+}
+
+.author {
+    font-size: 40px;
+    padding: 45px;
+    animation: pulse 2.2s infinite;
+}
+
+.author a {
+    color: rgb(241, 238, 238);
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 0.8;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
