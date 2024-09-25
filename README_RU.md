@@ -1,3 +1,5 @@
+Language: [EN](https://github.com/EvansTrein/generate-random-password-go/blob/main/README.md), [RU](https://github.com/EvansTrein/generate-random-password-go/blob/main/README_RU.md)
+
 ![](screenshot.png)
 
 # Генератор рандомных паролей
