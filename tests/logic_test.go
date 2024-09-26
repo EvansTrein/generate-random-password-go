@@ -35,3 +35,33 @@ func TestIsValidPasswordNoSymbols(t *testing.T) {
 		}
 	}
 }
+
+func TestIsValidPasswordNoNumbers(t *testing.T) {
+	fail := []string{"C*OdapJXP", "fAdcoUob!XhfC", "XMsqkoylBg#LP", "pLanA$"}
+
+	for _, el := range fail {
+		if logic.IsValidPassword(el) {
+			t.Errorf("Generated password is %s", el)
+		}
+	}
+}
+
+func TestIsValidPasswordNoLowercase(t *testing.T) {
+	fail := []string{"$DB5TLVB", "_7KC$EO9O0", "*Q0F1MEQH_JF", "Y2U3Q!"}
+
+	for _, el := range fail {
+		if logic.IsValidPassword(el) {
+			t.Errorf("Generated password is %s", el)
+		}
+	}
+}
+
+func TestIsValidPasswordNoUppercase(t *testing.T) {
+	fail := []string{"3h_jyg7iyo", "QNKQ7X9#KL5G", "TKLR!ND1SMVIR", "U&ZTLY_0"}
+
+	for _, el := range fail {
+		if logic.IsValidPassword(el) {
+			t.Errorf("Generated password is %s", el)
+		}
+	}
+}
