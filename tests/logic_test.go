@@ -57,7 +57,7 @@ func TestIsValidPasswordNoLowercase(t *testing.T) {
 }
 
 func TestIsValidPasswordNoUppercase(t *testing.T) {
-	fail := []string{"3h_jyg7iyo", "QNKQ7X9#KL5G", "TKLR!ND1SMVIR", "U&ZTLY_0"}
+	fail := []string{"3h_jyg7iyo", "qnkq7x9#kl5g", "tklr!nd1smvir", "u&ztly_0"}
 
 	for _, el := range fail {
 		if logic.IsValidPassword(el) {
