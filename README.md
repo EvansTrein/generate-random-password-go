@@ -6,7 +6,7 @@ Language: [EN](https://github.com/EvansTrein/generate-random-password-go/blob/ma
 Allows generating passwords of different lengths (the length can be set manually).
 
 # Why and how I did it
-I needed to get hands-on with the full cycle (well, or almost full cycle) of creating a web application, but at the same time, the application itself, had to be minimalistic (intentionally didn't want to overcomplicate the task). 
+There was a desire to realize the interaction of frontend and backend, but at the same time, the application itself should be minimalistic (intentionally did not want to complicate the task).
 
 Now specifically:
 
